@@ -1,0 +1,24 @@
+
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+
+# ...even if they are in subdirectories
+!kitty/
+!kitty/*
+!dunst
+!dunst/*
+!i3
+!i3/*
+!picom
+!picom/*
+!polybar
+!polybar/*
+!rofi
+!rofi/*
+
+# if the files to be tracked are in subdirectories
+# !*/a/b/file1.txt
+# !*/a/b/c/*
