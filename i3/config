@@ -8,9 +8,9 @@ set $rofi ~/scripts/rofi/launch.sh
 for_window [class="^.*"] border pixel 0
 
 # Change gap size
-gaps outer 4
-gaps inner 20
-gaps top 62
+gaps outer 2
+gaps inner 18
+gaps top 50
 
 # Drag floating windows
 floating_modifier $mod
@@ -130,7 +130,6 @@ exec_always --no-startup-id pkill picom; picom --no-use-damage
 exec_always --no-startup-id pkill dunst; dunst
 
 # Use URxvt settings from Xresources
-exec_always --no-startup-id xrdb ~/.Xresources
-exec --no-startup-id pulseaudio -k; pulseaudio --start
+# exec --no-startup-id pulseaudio -k; pulseaudio --start
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
